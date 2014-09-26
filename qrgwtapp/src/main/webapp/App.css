@@ -1,0 +1,28 @@
+html, html body {
+	height: 100%;
+	width: 100%;
+}
+
+.main-panel h2 {
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+input {
+	box-sizing: border-box;
+}
+
+.gwt-TextBox-prompt {
+	color: #999;
+	font-style: italic;
+	font-size: smaller;
+}
+
+.main-panel {
+	background: #f8f8f8;
+	padding: 20px;
+    margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
