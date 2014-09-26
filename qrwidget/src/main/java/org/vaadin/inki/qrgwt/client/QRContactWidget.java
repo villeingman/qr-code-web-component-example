@@ -21,6 +21,9 @@ public class QRContactWidget extends Widget {
 	private String lastName = "";
 	private String firstName = "";
 
+	/*
+	 * Constuctor. Ensures that needed html templates are added and injects a <qr-code> element to the page. 
+	 */
 	public QRContactWidget() {
 		super();
 		ensureHTMLImport();
@@ -29,6 +32,9 @@ public class QRContactWidget extends Widget {
 		refresh();
 	}
 
+	/*
+	 * Injects the qr-code html template to page head section. 
+	 */
 	private static void ensureHTMLImport() {
 		if (!injected) {
 			Element head = Document.get().getElementsByTagName("head")
