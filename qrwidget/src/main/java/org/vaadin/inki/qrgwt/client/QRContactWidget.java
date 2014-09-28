@@ -48,6 +48,17 @@ public class QRContactWidget extends Widget {
 	}
 
 	/*
+	 * Sets all data and calls refresh to update qr-code image
+	 */
+	public void setData(String firstName, String lastName, String email, String phoneNumber) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.phoneNumber = phoneNumber;
+		refresh();
+	}
+	
+	/*
 	 * Sets the stored values in MECARD format to the <qr-code> element's 'data'
 	 * attribute that initiates the QR code image update
 	 */
@@ -56,22 +67,4 @@ public class QRContactWidget extends Widget {
 				+ email + ";TEL:" + phoneNumber + ";";
 		getElement().setAttribute("data", mecard);
 	}
-
-	public void setPhoneNumber(String value) {
-		this.phoneNumber = value;
-		refresh();
-	}
-
-	public void setEmail(String value) {
-		this.email = value;
-	}
-
-	public void setLastName(String value) {
-		this.lastName = value;
-	}
-
-	public void setFirstName(String value) {
-		this.firstName = value;
-	}
-
 }

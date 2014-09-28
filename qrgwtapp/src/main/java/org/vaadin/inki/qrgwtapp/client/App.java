@@ -60,9 +60,8 @@ public class App implements EntryPoint, KeyUpHandler {
 
 	@Override
 	public void onKeyUp(KeyUpEvent event) {
-		qrCodeImage.setFirstName(firstNameField.getValue());
-		qrCodeImage.setLastName(lastNameField.getValue());
-		qrCodeImage.setEmail(emailField.getValue());
-		qrCodeImage.setPhoneNumber(phoneField.getValue());
+		qrCodeImage.setData(firstNameField.getValue(),
+				lastNameField.getValue(), emailField.getValue(),
+				phoneField.getValue());
 	}
 }
