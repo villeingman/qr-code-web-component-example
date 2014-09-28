@@ -4,6 +4,7 @@
 	<groupId>org.vaadin.inki</groupId>
 	<artifactId>qrwidget</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>QR Code Web Component Widget</name>
 
 	<dependencies>
@@ -20,6 +21,11 @@
 				<directory>src/main/java</directory>
 				<includes>
 					<include>**/*.java</include>
+				</includes>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
 					<include>**/*.gwt.xml</include>
 				</includes>
 			</resource>
