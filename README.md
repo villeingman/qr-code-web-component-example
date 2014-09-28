@@ -11,3 +11,5 @@ Three Maven projects:
  3. qrvaadin: Vaadin app using the widget
 
 More detailed description published in vaadin.com blog.
+
+Disclaimer: the Maven setup isn't ready yet. Until further notice I'd suggest browsing the code by hand and simply take a copy-paste of the needed source code. 
